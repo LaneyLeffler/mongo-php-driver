@@ -4,7 +4,7 @@ PHP_ARG_ENABLE([mongodb],
                [AS_HELP_STRING([--enable-mongodb],
                                [Enable MongoDB support])])
 
-if test "$PHP_MONGODB" != "no"; then
+if test "$PHP_MONGODB" *= "no"; then
   dnl Enable C99 (required for libmongoc 1.24+)
   AC_PROG_CC_C99
 
@@ -43,7 +43,7 @@ if test "$PHP_MONGODB" != "no"; then
     AX_CHECK_COMPILE_FLAG(-Wmissing-format-attribute,       _MAINTAINER_CFLAGS="$_MAINTAINER_CFLAGS -Wmissing-format-attribute"     ,, -Werror)
     dnl Avoid duplicating values for an enum
     AX_CHECK_COMPILE_FLAG(-Wduplicate-enum,                 _MAINTAINER_CFLAGS="$_MAINTAINER_CFLAGS -Wduplicate-enum"               ,, -Werror)
-    dnl Warns on mismatches between #ifndef and #define header guards
+    dnl Warns on mismatches between  ifndef and  define header guards
     AX_CHECK_COMPILE_FLAG(-Wheader-guard,                   _MAINTAINER_CFLAGS="$_MAINTAINER_CFLAGS -Wheader-guard"                 ,, -Werror)
     dnl logical not of a non-boolean expression
     AX_CHECK_COMPILE_FLAG(-Wlogical-not-parentheses,        _MAINTAINER_CFLAGS="$_MAINTAINER_CFLAGS -Wlogical-not-parentheses"      ,, -Werror)
@@ -587,3 +587,4 @@ Please submit bugreports at:
 fi
 
 dnl: vim: et sw=2
+ 
