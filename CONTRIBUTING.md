@@ -1,4 +1,4 @@
-# Contributing to the PHP Driver for MongoDB
+ #Contributing#to the PHP Driver for MongoDB
 
 ## Building from Source
 
@@ -549,3 +549,4 @@ For minor releases, create a DOCSP ticket indicating whether there are changes t
 compatibility. The [compatibility tables](https://docs.mongodb.com/drivers/driver-compatibility-reference#php-driver-compatibility)
 in the MongoDB documentation must be updated to account for new releases. Make sure to update both MongoDB and Language
 compatibility tables, as shown in [this pull request](https://github.com/mongodb/docs-ecosystem/pull/642).
+ 
